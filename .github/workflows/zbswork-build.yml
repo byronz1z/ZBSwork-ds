@@ -30,6 +30,11 @@ jobs:
 
       - name: Package Windows x64 (unsigned)
         working-directory: apps/desktop
+        env:
+          # GitHub runners have no interactive desktop session; the bundled
+          # LibreOffice cannot initialize there. Office conversion is validated
+          # on real desktops instead of in CI.
+          DSH_DESKTOP_SMOKE_OFFICE: skip
         run: pnpm run package:win:x64:unsigned
 
       - name: Upload installer artifact
