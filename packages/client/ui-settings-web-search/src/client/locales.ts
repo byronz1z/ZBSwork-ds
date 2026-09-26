@@ -35,7 +35,7 @@ export const en: Record<WebSearchSettingsLocaleKey, string> = {
 /** Simplified Chinese copy. */
 export const zh: Record<WebSearchSettingsLocaleKey, string> = {
   title: '网页搜索',
-  description: '设置 DeepSeek 的搜索提供方。',
+  description: '设置 ZBSwork 的搜索提供方。',
   apiKey: 'API Key',
   apiKeyHint: '不写入设置文件。留空表示保持当前密钥。',
   apiKeySet: '已配置密钥。',
