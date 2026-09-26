@@ -33,7 +33,7 @@ jobs:
         run: pnpm run package:win:x64:unsigned
 
       - name: Upload installer artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: zbswork-win-x64
           path: apps/desktop/.desktop-build/targets/win-x64/unsigned-artifacts/*.exe
