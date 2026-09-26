@@ -15,3 +15,9 @@ export function FishLogo({ size = 24, className }: IconProps) {
     </svg>
   )
 }
+
+/** ViewBox of the ZBSwork mark, kept for legacy hero consumers. */
+export const FISH_LOGO_VIEWBOX = { width: 1024, height: 1024 }
+
+/** Deprecated whale path retained for API compatibility; the ZBSwork mark is a full-bleed badge, not a stroked path. */
+export const FISH_LOGO_PATH = ''
